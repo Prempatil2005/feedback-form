@@ -1,0 +1,121 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-color: #f8f9fa;
+    color: #343a40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+#feedback {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.feedback-form-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    padding: 2rem 2.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.feedback-form-container h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.feedback-form-container .subtitle {
+    text-align: center;
+    color: #6c757d;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #495057;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #6741d9;
+    box-shadow: 0 0 0 3px rgba(103, 65, 217, 0.2);
+}
+
+.rating-group {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.rating-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.rating-option input {
+    display: none;
+}
+
+.rating-option .icon {
+    font-size: 2.5rem;
+    color: #adb5bd;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.rating-option .label-text {
+    margin-top: 0.5rem;
+    color: #6c757d;
+    font-size: 0.875rem;
+}
+
+.rating-option input:checked + .icon {
+    color: #6741d9;
+    transform: scale(1.1);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 0.875rem;
+    background-color: #6741d9;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+.submit-btn:hover {
+    background-color: #5f3dc4;
+}
